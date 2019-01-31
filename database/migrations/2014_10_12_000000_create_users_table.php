@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('facebook_id', 32)->nullable();
             $table->string('google_id', 32)->nullable();
             $table->string('password', 128);
-            $table->bigInteger('reward_points', 128)->default(0);
+            $table->bigInteger('reward_points')->default(0);
             $table->rememberToken();
             $table->timestamps();
         });
