@@ -7,6 +7,16 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia\HasMedia;
 use Spatie\MediaLibrary\HasMedia\HasMediaTrait;
 
+/**
+ * App\Models\product
+ *
+ * @property-read \App\Models\Category $category
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Spatie\MediaLibrary\Models\Media[] $media
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\product newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\product newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|\App\Models\product query()
+ * @mixin \Eloquent
+ */
 class product extends Model implements HasMedia
 {
     use HasMediaTrait;
